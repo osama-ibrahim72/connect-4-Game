@@ -1,4 +1,6 @@
-//SMSM 
+/*
+By : SMSM -------connect 4 Game------- 2 players
+*/ 
 #include<iostream>
 using namespace std ;
 
@@ -17,47 +19,31 @@ int insert(int x)
 {
 
 	//cheak values
-	if(x==1)
-	{
-		
-		if (c1>0)
-		{
+	if(x==1){
+		if (c1>0) {
 			c1--;
 			return c1;
 		}
 		else
 		return -1;
-		
 	}
-	
-	else if(x==2)
-	{
-		
-		if (c2>0)
-		{
+	else if(x==2){
+		if (c2>0){
 			c2--;
 			return c2;
 		}
 		else
 		return -1;
-		
 	}
-	
-	else if(x==3)
-	{
-		
-		if (c3>0)
-		{
+	else if(x==3){
+		if (c3>0){
 			c3--;
 			return c3;
 		}
 		else
 		return -1;
-		
 	} 
-	else if(x==4)
-	{
-		
+	else if(x==4){
 		if (c4>0)
 		{
 			c4--;
@@ -65,43 +51,30 @@ int insert(int x)
 		}
 		else
 		return -1;
-		
 	}
-	else if(x==5)
-	{
-		
-		if (c5>0)
-		{
+	else if(x==5){
+		if (c5>0){
 			c5--;
 			return c5;
 		}
 		else
-		return -1;
-		
+		return -1;	
 	}
-	else if(x==6)
-	{
-		
-		if (c6>0)
-		{
+	else if(x==6){	
+		if (c6>0){
 			c6--;
 			return c6;
 		}
 		else
 		return -1;
-		
 	}
-	else if(x==7)
-	{
-		
-		if (c7>0)
-		{
+	else if(x==7){
+		if (c7>0){
 			c7--;
 			return c7;
 		}
 		else
-		return -1;
-		
+		return -1;	
 	}
 	else 
 	return -1;
@@ -111,9 +84,7 @@ int insert(int x)
 bool win_p1_row (int a)//1st case to win p1
 {
 	int count=0;
-	
-		for(int j=0; j<7;j++)
-		{
+		for(int j=0; j<7;j++){
 			if (arr[a][j]=='X')
 			{
 				count++;
